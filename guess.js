@@ -10,8 +10,9 @@ let answer = "comcast";
 //Takes user input and assigns it to guess variable
 const input = require('readline-sync');
 let guess = input.question("Please guess a letter: ");
+
 //The user enters a guess
-console.log(guess);
+console.log("You guessed:", guess );
 
 /*
 If statement that checks answer for the letter that was guessed
@@ -25,6 +26,7 @@ if (answer.includes(guess) & guess.length < 2 ) {
   else {
    console.log("The word does not contain the letter", (guess) );
 } 
+
 //New line
 console.log("\n");
 
