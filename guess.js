@@ -13,12 +13,18 @@ let guess = input.question("Please guess a letter: ");
 //The user enters a guess
 console.log(guess);
 
-//If statement that checks answer for the letter that was guessed
-if (answer.includes(guess)) {
+/*
+If statement that checks answer for the letter that was guessed
+Checks to make sure the guess is only 1 letter.
+*/
+if (answer.includes(guess) & guess.length < 2 ) {
    console.log("Yes. The word contains that letter.");
-} else {
-   console.log("The word does not contain the letter", (guess) );
+} else if (guess.length > 1) {
+   console.log("You can only guess one letter at a time.")
 }
+  else {
+   console.log("The word does not contain the letter", (guess) );
+} 
 //New line
 console.log("\n");
 
